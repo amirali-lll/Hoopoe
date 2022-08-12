@@ -1,11 +1,19 @@
 @import "./normalize.css";
 :root {
-  --color-primary: #2584ff;
+  /* --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 30px; */
+  --color-primary: #006464;
+  --color-secondary: #33a478;
+  --color-accent: #f46924;
+  --color-headings: #251e64;
+  --color-body: #918ca4;
+  --color-body-darker: #464646;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -956,10 +964,13 @@ a {
   justify-content: center;
 }
 
-
-.fieldset--1row{
+@media screen and (min-width:1024px){
+  .fieldset--1row{
   display: flex;
   justify-content: space-around;
 }
+}
+
+
 
 
