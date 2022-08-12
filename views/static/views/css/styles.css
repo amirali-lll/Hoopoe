@@ -10,7 +10,7 @@
   --border-radius: 30px; */
   --color-primary: #006464;
   --color-secondary: #33a478;
-  --color-accent: #f46924;
+  --color-accent: #ff3400;
   --color-headings: #251e64;
   --color-body: #918ca4;
   --color-body-darker: #464646;
@@ -238,7 +238,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #3a8ffd;
+  background: #008585;
 }
 
 .btn--secondary {
@@ -247,7 +247,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #05cdf0;
+  background: #13675b;
 }
 
 .btn--accent {
@@ -351,11 +351,11 @@ a {
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+  background: #007474;
 }
 
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+  background: #12695c;
 }
 
 /* Plans */
@@ -393,7 +393,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular .card__header {
+/* .plan--popular .card__header {
   position: relative;
 }
 
@@ -404,7 +404,7 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
-}
+} */
 
 .plan:hover {
   transform: scale(1.05);
