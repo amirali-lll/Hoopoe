@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://moshified.com/moshify.jpg" />
   <meta property="og:url" content="http://moshified.com" />
-  <title>Hoopa</title>
+  <title>Hoopo</title>
   <link rel="icon" href={% static "views/images/main-logo.svg" %} />
   <link rel="apple-touch-icon" sizes="72x72" href={% static "views/images/favicon-md.png" %} />
   <link rel="apple-touch-icon" sizes="144x144" href={% static "views/images/favicon-lg.png" %} />
@@ -21,7 +21,6 @@
   <link rel="stylesheet" href={% static "views/css/styles.css" %} />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-F
 <body>
   <header>
     <nav class="nav collapsible">
@@ -54,10 +53,10 @@ F
         <a target="_blank" href="https://codewithmosh.com" class="btn btn--accent btn--stretched">Get Started</a>
       </header>
       <picture data-aos="zoom-in">
-        <source type="views/image/webp" srcset={% static "views/images/banner.webp 1x"
-          , "views/images/banner@2x.webp 2x" %} />
-        <source type="views/image/png" srcset={% static "views/images/banner.png 1x" , "views/images/banner@2x.png 2x"
-          %} />
+        <source type="views/image/webp" srcset="static/views/images/banner.webp 1x
+          , static/views/images/banner@2x.webp 2x" />
+        <source type="views/image/png" srcset="static/views/images/banner.png 1x 
+          , static/views/images/banner@2x.png 2x"/>
         <img class="hero__image" src={% static "views/images/banner.png" %} alt="" />
       </picture>
     </div>
@@ -228,7 +227,7 @@ F
       <h2>نیاز به مشورت دارید ؟</h2>
     </header>
     <div class="container grid grid--1x2">
-      <div class="map-container">
+      <!-- <div class="map-container">
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.266413403146!2d51.389935373887035!3d35.70200050493447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e011d9d87a16b%3A0x970e70cfa6aa683d!2sMeydan-e%20Enghelab-e%20Eslami%20Metro%20Station!5e0!3m2!1sen!2s!4v1659994518075!5m2!1sen!2s"
           width="100%"
@@ -237,9 +236,8 @@ F
           style="border: 0"
           allowfullscreen
           ></iframe>
-      </div>
-      <div class="contact container">
-        <div class="contact-form">
+      </div> -->
+      <div class="contact container contact-form">
             <form id="contact" action="" method="post">
                 <div class="fieldset--1row">
                   <div class="fieldset">
@@ -259,22 +257,19 @@ F
                   <button type="submit"  class="btn btn--secondary btn--stretched">Send It</button>
                 </div>
                 <div class="fieldset call-btn-container iconset--1row">
-                  <a href="" class="btn btn--primary btn--small">
-                    <!-- <svg style="fill: #fff;" class="icon icon-container--accent">
-                      <use href='{% static "views/images/phone-icon.svg" %}'></use>
-                    </svg> -->
-                    <p class="btn__text">021-12345678</p>
+                  <!-- <a href="tel:021-12345678" class="btn btn--primary">
+                    <svg class="icon icon--white">
+                        <use xlink:href="/views/static/views/images/sprite.svg#search"></use>
+                    </svg>Call
                   </a>
-                  <a href="/" class="whatsapp-container btn--small" >
-                    <svg class="icon whatsapp-icon">
-                      <use href='{% static "views/images/sprite.svg" %}#whatsapp'></use>
-                    </svg>
-                    
-                  </a>
+                  <a href="tel:021-12345678" class="btn btn--primary">
+                    <svg class="icon icon--white">
+                        <use xlink:href="/views/static/views/images/sprite.svg#search"></use>
+                    </svg>Call
+                  </a> -->
                   
                 </div>
               </form>
-            </div>
           </div>
 
 
@@ -376,7 +371,7 @@ F
       </div>
     </div>
   </section>
-  <div class="container">
+  <!-- <div class="container">
     <div class="callout callout--primary callout-signup">
       <div class="grid grid--1x2">
         <div class="callout__content">
@@ -390,7 +385,7 @@ F
         <a target="_blank" href="https://codewithmosh.com" class="btn btn--secondary btn--stretched">Get Started</a>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <footer class="block block--dark footer">
     <div class="container grid footer__sections">
@@ -455,8 +450,8 @@ F
         </div>
       </section>
       <div class="footer__brand">
-        <img src={% static "views/images/logo.svg" %} alt="" />
-        <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
+        <img src={% static "views/images/main-logo.svg" %} alt="" />
+        <p class="footer__copyright">Copyright 2022 Hoopa</p>
       </div>
     </div>
   </footer>

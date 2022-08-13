@@ -280,14 +280,7 @@ a {
   display: inline-block;
 }
 
-.btn--small{
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  margin: 0;
-}
-/* .btn--contact{
-  align-self: center;
-} */
+
 
 @media screen and (min-width: 1024px) {
   .btn {
@@ -872,7 +865,7 @@ a {
 }
 
 .footer__brand img {
-  max-width: 230px;
+  max-width: 180px;
 }
 
 .footer__copyright {
@@ -983,28 +976,9 @@ a {
 }
 }
 
-.iconset--1row{
+
+.iconset{
+  direction: rtl;
   display: flex;
   justify-content: space-around;
-  direction: rtl;
 }
-
-.iconset--1row .btn--small{
-  padding-top: 1.25rem;
-}
-
-
-.whatsapp-container{
-  background: var(--color-primary);
-  border-radius: var(--border-radius);
-  display: flex;
-}
-
-.whatsapp-icon{
-  margin: 0 1rem ;
-  width: 32px;
-
-}
-
-
-
