@@ -43,89 +43,105 @@
   </header>
   <section class="block block--dark block--skewed-left hero">
     <div class="container grid grid--1x2">
-      <header class="block__header hero__content">
-        <h1 data-aos="zoom-in-up" class="block__heading">
-          Cloud Hosting for Pros
-        </h1>
-        <p class="hero__tagline">
-          Deploy your websites in less than 60 seconds.
-        </p>
-        <a target="_blank" href="https://codewithmosh.com" class="btn btn--accent btn--stretched">Get Started</a>
-      </header>
+      
       <picture data-aos="zoom-in">
         <source type="views/image/webp" srcset="static/views/images/banner.webp 1x
           , static/views/images/banner@2x.webp 2x" />
         <source type="views/image/png" srcset="static/views/images/banner.png 1x 
           , static/views/images/banner@2x.png 2x"/>
-        <img class="hero__image" src={% static "views/images/banner.png" %} alt="" />
+        <img class="hero__image" src={% static "views/images/Banner.jpeg" %} alt="" />
       </picture>
+      <header class="block__header hero__content">
+        <h1 data-aos="zoom-in-up" class="block__heading">
+          امنیت با هدهد
+        </h1>
+        <p class="hero__tagline">
+          همیشه پیچیدگی امنیت نیست
+        </p>
+        <a target="_blank" href="https://codewithmosh.com" class="btn btn--accent btn--stretched">Get Started</a>
+      </header>
     </div>
   </section>
   
-  <section data-aos="fade-up" class="block container block-plans">
-    <div class="grid grid--1x3">
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% OFF</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100 GB SSD Sotrage</li>
-              <li class="list__item">3 GB RAM</li>
-            </ul>
-            <button class="btn btn--outline btn--block">Buy Now</button>
+  <section class="block container block-plans">
+    <header class="block__header">
+      <h2>سرویس‌ها</h2>
+      <p>برخی از محصولات و سرویس های ما در یک نگاه</p>
+    </header>
+      <div class="grid grid--1x4 grid--1x2">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">SIEM</h3>
+              
+              <span class="plan__description">سیستم مدیریت داده فلان بیسار</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">ساختار ماژولار</li>
+                <li class="list__item">سازگار با تمامی برنده‌های سخت افزار شبکه</li>
+                <li class="list__item">سیستم هشدار هوشمند و برخط</li>
+                <li class="list__item">به روز رسانی داشبوردها توسط تیم هدهد</li>
+              </ul>
+              <button class="btn btn--outline btn--block">اطلاعات بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Hoopin</h3>
+              
+              <span class="plan__description">سیستم عامل امن مورد نیاز شما</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">قابلیت شخصی سازی کامل</li>
+                <li class="list__item">قابلیت نصب برنامه‌های ویندوز و لینوکس</li>
+                <li class="list__item">ایجاد انواع دسترسی‌ها و فضا ها</li>
+                <li class="list__item">طراحی سیستم عامل متناسب با نیاز شما</li>
+              </ul>
+              <button class="btn btn--outline btn--block">اطلاعات بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Hoopo Eye</h3>
+              
+              <span class="plan__description">هدهد حواسش هست </span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">مانیتورینگ فلان بیصار</li>
+                <li class="list__item">بک آپ گیری هوشمند و مداوم </li>
+                <li class="list__item">پشتیبانی و بروزرسانی مداوم توسط تیم هدهد</li>
+                <li class="list__item">یه قابلیت خیلی خاص و عجیب که نمیگیم</li>
+              </ul>
+              <button class="btn btn--outline btn--block">اطلاعات بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Hoopo Test</h3>
+              <span class="plan__description">ارزیابی آسیب پذیری</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">ارزیابی دقیق</li>
+                <li class="list__item">ما PENTEST میزنیم خیلی خفنیم</li>
+                <li class="list__item">کارمون خیلی خوبه بخدا</li>
+                <li class="list__item">یه قابلیت فوق‌العاده خفن دیگه</li>
+              </ul>
+              <button class="btn btn--outline btn--block">اطلاعات بیشتر</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="plan plan--popular">
-        <div class="card card--primary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--primary badge--small">10% OFF</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100 GB SSD Sotrage</li>
-              <li class="list__item">3 GB RAM</li>
-            </ul>
-            <button class="btn btn--outline btn--block">Buy Now</button>
-          </div>
-        </div>
-      </div>
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% OFF</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100 GB SSD Sotrage</li>
-              <li class="list__item">3 GB RAM</li>
-            </ul>
-            <button class="btn btn--outline btn--block">Buy Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
   <section class="block container">
     <header class="block__header">
       <h2>Host on the Cloud to Keep Growing</h2>
@@ -436,7 +452,7 @@
       </section> -->
       <div class="footer__brand">
         <img src={% static "views/images/main-logo.svg" %} alt="" />
-        <p class="footer__copyright">Copyright 2022 Hoopa</p>
+        <p class="footer__copyright">Copyright 2022 Hoopo</p>
       </div>
     </div>
   </footer>

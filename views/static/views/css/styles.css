@@ -15,6 +15,7 @@
   --color-body: #918ca4;
   --color-body-darker: #464646;
   --color-border: #ccc;
+  --color-hero-background:#2092c6;
   --border-radius: 30px;
 }
 
@@ -31,6 +32,7 @@
 
 html {
   font-size: 62.5%;
+  text-align: right;
 }
 
 img {
@@ -162,6 +164,7 @@ a {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
   color: var(--color-headings);
+  direction: rtl;
 }
 
 .list--tick .list__item {
@@ -334,13 +337,13 @@ a {
 /* Cards */
 
 .card {
-  border-radius: 7px;
+  border-radius: var(--border-radius);
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
 }
 
 .card__header, .card__body {
-  padding: 2rem 7%;
+  padding: 2rem 4%;
 }
 
 .card--primary .card__header {
@@ -388,12 +391,15 @@ a {
 .plan__description {
   font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  text-align: center;
   display: block;
 }
 
 .plan .list__item {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* .plan--popular .card__header {
@@ -412,7 +418,12 @@ a {
 .plan:hover {
   transform: scale(1.05);
 }
-
+.plan__name{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
 .plan--popular:hover {
   transform: scale(1.15);
 }
@@ -422,7 +433,7 @@ a {
     transform: scale(1.1);
   }
   .plan__name {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
   }
   .plan__price {
     font-size: 5rem;
@@ -517,6 +528,9 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -636,7 +650,7 @@ a {
 
 .block__header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .block__heading {
@@ -739,6 +753,14 @@ a {
 
 /* Hero */
 
+.hero{
+
+}
+
+.hero__image{
+  border-radius: var(--border-radius);
+}
+
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -748,7 +770,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero__content {
-    text-align: left;
+    text-align: right;
     align-self: center;
   }
 }
@@ -789,7 +811,7 @@ a {
 /* Plans Block */
 
 .block-plans .grid {
-  gap: 8rem 4rem;
+  gap: 8rem 2rem;
 }
 
 .block-plans .card {
