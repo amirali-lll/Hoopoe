@@ -1,46 +1,9 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="hoopa kucholu" />
-  <meta property="og:title" content="title ..." />
-  <meta property="og:description"
-    content="description ... " />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://moshified.com/moshify.jpg" />
-  <meta property="og:url" content="http://moshified.com" />
-  <title>Hoopo</title>
-  <link rel="icon" href={% static "views/images/main-logo.svg" %} />
-  <link rel="apple-touch-icon" sizes="72x72" href={% static "views/images/favicon-md.png" %} />
-  <link rel="apple-touch-icon" sizes="144x144" href={% static "views/images/favicon-lg.png" %} />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href={% static "views/css/styles.css" %} />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-  <header>
-    <nav class="nav collapsible">
-      <a aria-label="Moshify" class="nav__brand" href="/"><img src={% static "views/images/main-logo.svg" %} alt=""/></a>
-      <svg class="icon icon--white nav__toggler">
-        <use href='{% static "views/images/sprite.svg" %}#menu'></use>
-      </svg>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item">
-          <a target="_self" href="/">صفحه اصلی</a>
-        </li>
-        <li class="nav__item">
-          <a target="_self" href="products/">محصولات</a>
-        </li>
-        <li class="nav__item">
-          <a target="_self" href="contact/">تماس باما</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+{% block title %} 
+Hoopo-Home
+{% endblock %}
+{% block content %}
   <section class="block block--dark block--skewed-left hero">
     <div class="container grid grid--1x2">
       
@@ -387,80 +350,4 @@
       </div>
     </div>
   </div> -->
-
-  <footer class="block block--dark footer">
-    <div class="container grid footer__sections">
-      <section class="collapsible collapsible--expanded footer__section">
-        <div class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">درباره هدهد</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use href='{% static "views/images/sprite.svg" %}#chevron'></use>
-          </svg>
-        </div>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">از کجا آمده‌ام</a></li>
-            <li><a href="#">آمدنم بهر چه بود</a></li>
-            <li><a href="#">به کجا میروم آخر </a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <div class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">محصولات</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use href='{% static "views/images/sprite.svg" %}#chevron'></use>
-          </svg>
-        </div>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">محصول اول</a></li>
-            <li><a href="#">محصول دوم</a></li>
-            <li><a href="#">محصول سوم</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <div class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">پشتیبانی</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use href='{% static "views/images/sprite.svg" %}#chevron'></use>
-          </svg>
-        </div>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">تماس با ما</a></li>
-            <li><a href="#">سوالات متداول</a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-      </section>
-      <!-- 
-        <div class="collapsible__header">
-          <h2 class="collapsible__heading footer__heading">Domains</h2>
-          <svg class="icon icon--white collapsible__chevron">
-            <use href='{% static "views/images/sprite.svg" %}#chevron'></use>
-          </svg>
-        </div>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li><a href="#">Domain Checker</a></li>
-            <li><a href="#">Domain Transfer</a></li>
-            <li><a href="#">Free Domain</a></li>
-          </ul>
-        </div>
-      </section> -->
-      <div class="footer__brand">
-        <img src={% static "views/images/main-logo.svg" %} alt="" />
-        <p class="footer__copyright">Copyright 2022 Hoopo</p>
-      </div>
-    </div>
-  </footer>
-  <script src={% static "views/js/main.js" %}></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
-</html>
+{% endblock%}
