@@ -4,5 +4,85 @@
   HOOPO-Hoopin
 {% endblock %}
 {% block content %}
-  Hoopin
+  <section class="block container">
+  <header class="block__header">
+    <h2>سیستم عامل هوپین</h2>
+    <p>
+      مجموعه‌ی هدهد با تکیه بر توانایی های مبتنی بر سیستم قادر است سیستم عامل امن متناسب با نیازهای شمارا طراحی کند
+    </p>
+  </header>
+  <article class="grid grid--1x2 feature">
+    <div class="feature__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#easy"></use>
+        </svg>
+      </span>
+      <h3 class="feature__heading">قابلیت نصب تمام برنامه‌ها</h3>
+      <p>
+        سیستم عامل هوپین از تمام برنامه‌های ویندوزی و لینوکسی پشتیبانی می‌کند و شما می‌توانید انواع برنامه‌های مورد نیاز خود را به راحتی نصب کنید
+      </p>
+    </div>
+    <picture>
+      <source
+        type="views/image/webp"
+        srcset={% static "views/images/easy.webp 1x" , "views/images/easy@2x.webp 2x" %}
+      />
+      <source
+        type="views/image/jpg"
+        srcset={% static "views/images/easy.jpg 1x" , "views/images/easy@2x.jpg 2x" %}
+      />
+      <img class="feature__image" src={% static "views/images/easy@2x.jpg" %} alt="" />
+    </picture>
+  </article>
+  <article class="grid grid--1x2 feature">
+    <div class="feature__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#computer"></use>
+        </svg>
+      </span>
+      <h3 class="feature__heading">تمام دسترسی‌ها را کنترل کنید</h3>
+      <p>
+        در سیستم عامل هوپین شما میتوانید انواع دسترسی ها و فضاها را ایجاد کنید
+      </p>
+    </div>
+    <picture>
+      <source
+        type="views/image/webp"
+        srcset={% static "views/images/fast.webp 1x" , "views/images/fast@2x.webp 2x" %}
+      />
+      <source
+        type="views/image/jpg"
+        srcset={% static "views/images/fast.jpg 1x" , "views/images/fast@2x.jpg 2x" %}
+      />
+      <img class="feature__image" src={% static "views/images/fast@2x.jpg" %} alt="" />
+    </picture>
+  </article>
+  <article class="grid grid--1x2 feature">
+    <div class="feature__content">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href={% static "views/images/sprite.svg#wordpress" %}></use>
+        </svg>
+      </span>
+      <h3 class="feature__heading">شخصی سازی کامل</h3>
+      <p>
+        شما می‌توانید هوپین را طبق سلیقه خود به طور کامل شخصی سازی کنید
+      </p>
+    </div>
+    <picture>
+      <source
+        type="views/image/webp"
+        srcset={% static "views/images/wordpress.webp 1x" , "views/images/wordpress@2x.webp 2x" %}
+      />
+      <source
+        type="views/image/jpg"
+        srcset={% static "views/images/wordpress.jpg 1x" , "views/images/wordpress@2x.jpg 2x" %}
+      />
+      <img class="feature__image" src={% static "views/images/wordpress@2x.jpg" %} alt="" />
+    </picture>
+  </article>
+</section>
+
 {% endblock %}
