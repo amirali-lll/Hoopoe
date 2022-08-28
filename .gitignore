@@ -1,5 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/django,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,macos,windows
+### specific to this project ###
+playground.html
+
 
 ### Django ###
 *.log
