@@ -27,7 +27,7 @@
     <header>
       <nav class="nav collapsible">
   <a aria-label="Moshify" class="nav__brand" href="/"
-    ><img src="images/main-logo.svg" alt=""
+    ><img src=" {% static 'views/images/main-logo.svg' %}" alt=""
   /></a>
   <svg class="icon icon--white nav__toggler">
     <use href='{% static "views/images/sprite.svg" %}#menu'></use>
@@ -35,6 +35,9 @@
   <ul class="list nav__list collapsible__content">
     <li class="nav__item">
       <a target="_self" href="/">صفحه اصلی</a>
+    </li>
+    <li class="nav__item">
+      <a target="_self" href="/contact/">تماس باما</a>
     </li>
     <li class="nav__item sub-nav">
       <a target="_self" href="/products/">محصولات</a>
@@ -46,9 +49,6 @@
           <li class="nav__item"><a href="/products/HoopEye">HoopEye</a></li>
         </ul>
       </div>
-    </li>
-    <li class="nav__item">
-      <a target="_self" href="/contact/">تماس باما</a>
     </li>
   </ul>
 </nav>
