@@ -16,3 +16,19 @@ def contact(request):
      template = loader.get_template('contact.html')
      context = {}
      return HttpResponse(template.render(context, request))
+
+
+def SIEM(request):
+     return render(request,'SIEM.html',{})
+
+def SIEM(request):
+     return render(request,'SIEM.html',{})
+
+def Hoopin(request):
+     return render(request,'Hoopin.html',{})
+
+def HoopTest(request):
+     return render(request,'HoopTest.html',{})
+
+def HoopEye(request):
+     return render(request,'HoopEye.html',{})
