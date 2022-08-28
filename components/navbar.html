@@ -1,12 +1,27 @@
 <nav class="nav collapsible">
-  <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+  <a aria-label="Moshify" class="nav__brand" href="/"
+    ><img src="images/main-logo.svg" alt=""
+  /></a>
   <svg class="icon icon--white nav__toggler">
-    <use xlink:href="images/sprite.svg#menu"></use>
+    <use href='{% static "views/images/sprite.svg" %}#menu'></use>
   </svg>
   <ul class="list nav__list collapsible__content">
-    <li class="nav__item"><a href="#">Hosting</a></li>
-    <li class="nav__item"><a href="#">VPS</a></li>
-    <li class="nav__item"><a href="#">Domain</a></li>
-    <li class="nav__item"><a href="#">Pricing</a></li>
+    <li class="nav__item">
+      <a target="_self" href="/">صفحه اصلی</a>
+    </li>
+    <li class="nav__item sub-nav">
+      <a target="_self" href="/products/">محصولات</a>
+      <div class="sub-nav-content">
+        <ul class="list">
+          <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
+          <li class="nav__item"><a href="/products/SIEM">SIEM</a></li>
+          <li class="nav__item"><a href="/products/HoopTest">HoopTest</a></li>
+          <li class="nav__item"><a href="/products/HoopEye">HoopEye</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav__item">
+      <a target="_self" href="/contact/">تماس باما</a>
+    </li>
   </ul>
 </nav>

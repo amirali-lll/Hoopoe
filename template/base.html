@@ -26,24 +26,33 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a aria-label="Moshify" class="nav__brand" href="/"
-          ><img src={% static "views/images/main-logo.svg" %} alt=""/></a
-        >
-        <svg class="icon icon--white nav__toggler">
-          <use href='{% static "views/images/sprite.svg" %}#menu'></use>
-        </svg>
-        <ul class="list nav__list collapsible__content">
-          <li class="nav__item">
-            <a target="_self" href="/">صفحه اصلی</a>
-          </li>
-          <li class="nav__item">
-            <a target="_self" href="/products/">محصولات</a>
-          </li>
-          <li class="nav__item">
-            <a target="_self" href="/contact/">تماس باما</a>
-          </li>
+  <a aria-label="Moshify" class="nav__brand" href="/"
+    ><img src="images/main-logo.svg" alt=""
+  /></a>
+  <svg class="icon icon--white nav__toggler">
+    <use href='{% static "views/images/sprite.svg" %}#menu'></use>
+  </svg>
+  <ul class="list nav__list collapsible__content">
+    <li class="nav__item">
+      <a target="_self" href="/">صفحه اصلی</a>
+    </li>
+    <li class="nav__item sub-nav">
+      <a target="_self" href="/products/">محصولات</a>
+      <div class="sub-nav-content">
+        <ul class="list">
+          <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
+          <li class="nav__item"><a href="/products/SIEM">SIEM</a></li>
+          <li class="nav__item"><a href="/products/HoopTest">HoopTest</a></li>
+          <li class="nav__item"><a href="/products/HoopEye">HoopEye</a></li>
         </ul>
-      </nav>
+      </div>
+    </li>
+    <li class="nav__item">
+      <a target="_self" href="/contact/">تماس باما</a>
+    </li>
+  </ul>
+</nav>
+
     </header>
     {% block content %}
     {% endblock %}
@@ -73,10 +82,10 @@
         </div>
         <div class="collapsible__content">
           <ul class="list">
-            <li><a href="#">SIEM</a></li>
-            <li><a href="#">Hoopin</a></li>
-            <li><a href="#">Hoopo Test</a></li>
-            <li><a href="#">Hoopo Eye</a></li>
+            <li><a href="/products/SIEM">SIEM</a></li>
+            <li><a href="/products/Hoopin">Hoopin</a></li>
+            <li><a href="/products/HoopTest">Hoopo Test</a></li>
+            <li><a href="/products/HoopEye">Hoopo Eye</a></li>
           </ul>
         </div>
       </section>
