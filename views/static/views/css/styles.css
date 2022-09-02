@@ -1095,3 +1095,12 @@ a {
   /* background-color: white;
   border-radius: var(--border-radius); */
 }
+
+/* Contact Block */
+
+.block--contact .grid{
+  column-gap: 10rem;
+}
+.block--contact .hero__content{
+  text-align: center;
+}
