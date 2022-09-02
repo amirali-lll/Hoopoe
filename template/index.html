@@ -1,8 +1,10 @@
-{% extends 'base.html' %} {% load static %} {% block title %} Hoopo-Home {%
-endblock %} {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Hoopo-Home {% endblock %}
+{% block content %}
 <section class="block block--dark block--skewed-left hero">
   <div class="container grid grid--1x2">
-    <picture data-aos="zoom-in">
+    <picture data-aos="zoom-in-right">
       <source
         type="views/image/webp"
         srcset="
@@ -21,7 +23,7 @@ endblock %} {% block content %}
       alt="" />
     </picture>
     <header class="block__header hero__content">
-      <h1 data-aos="zoom-in-up" class="block__heading">امنیت با هدهد</h1>
+      <h1 data-aos="zoom-in" class="block__heading">امنیت با هدهد</h1>
       <p class="hero__tagline">همیشه پیچیدگی امنیت نیست</p>
       <a
         target="_blank"
@@ -33,7 +35,7 @@ endblock %} {% block content %}
   </div>
 </section>
 
-<section class="block container block-plans">
+<section data-aos="fade-up" class="block container block-plans">
   <header class="block__header">
     <h2>سرویس‌ها</h2>
     <p>برخی از محصولات و سرویس های ما در یک نگاه</p>
