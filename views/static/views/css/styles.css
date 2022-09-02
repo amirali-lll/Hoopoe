@@ -630,6 +630,10 @@ a {
   color: #7b858b;
 }
 
+.block--light-dark {
+  background: #171717;
+}
+
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
@@ -670,9 +674,13 @@ a {
 }
 
 .nav__item {
+  margin: 0;
   padding: 0.5rem 2rem;
   color: #d2d0db;
   border-bottom: 1px solid #222;
+}
+.nav__item p{
+  margin:0;
 }
 
 .nav__item:last-of-type {
@@ -840,6 +848,10 @@ a {
 
 .feature__heading {
   margin: 1rem 0;
+}
+
+.feature__image{
+  border-radius: var(--border-radius);
 }
 
 @media screen and (min-width: 768px) {
