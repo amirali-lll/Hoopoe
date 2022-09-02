@@ -534,40 +534,6 @@ a {
   }
 }
 
-/* Testimonials */
-.container--testimonial{
-  display: flex;
-  justify-content: center;
-}
-.testimonial {
-  margin: 1rem 2rem;
-  padding: 1.5rem;
-  text-align: center;
-  background: rgb(230, 230, 230);
-  border-radius: var(--border-radius);
-  display: inline;
-  
-}
-.testimonial p {
-  font-size: 1.5rem;
-  display:inline;
-  color: rgb(84, 84, 84);
-  font-weight: bold;
-  margin: 0 2rem ;
-}
-
-.testimonial .icon{
-  width: 2rem;
-  display:inline;
-  vertical-align: middle;
-  margin: 0 1rem;
-}
-
-
-@media screen and (min-width: 768px) {
-  
-}
-
 /* Callouts */
 
 .callout {
@@ -679,6 +645,7 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  overflow: scroll;
 }
 
 /* Navigation Bar */
@@ -858,7 +825,7 @@ a {
 }
 
 .block-plans .card {
-  max-width: 500px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -1059,4 +1026,76 @@ a {
   direction: rtl;
   display: flex;
   justify-content: space-around;
+}
+
+
+/* Testimonials */
+
+.testimonial {
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgb(230, 230, 230);
+  border-radius: var(--border-radius);
+  display: inline;
+  
+}
+.testimonial p {
+  font-size: 1.5rem;
+  display:inline;
+  color: rgb(84, 84, 84);
+  font-weight: bold;
+  margin: 0 2rem ;
+}
+
+.testimonial .icon{
+  width: 2rem;
+  display:inline;
+  vertical-align: middle;
+  margin: 0 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+
+/* Company */
+
+.container--company{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.company{
+  margin: 1.4rem;
+  border-radius: var(--border-radius);
+  background: rgb(243, 243, 243);
+  padding:0.5rem;
+  max-width: 25rem;
+}
+
+.company__icon-container{
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.company__icon{
+  width: 100%;
+}
+
+.company__name{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color:#567;
+  /* background-color: white;
+  border-radius: var(--border-radius); */
+  
 }
