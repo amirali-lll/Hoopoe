@@ -26,6 +26,11 @@
 }
 
 /* Typography */
+@font-face {
+  font-family: BKoodak;
+  src: url(../fonts/BKoodkBd.ttf);
+}
+
 
 ::selection {
   background: var(--color-primary);
@@ -42,7 +47,8 @@ img {
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  /* font-family: Inter, Arial, Helvetica, sans-serif; */
+  font-family: BKoodak;
   font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body);
@@ -236,6 +242,11 @@ a {
   white-space: nowrap;
 }
 
+.btn--bold{
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
 .btn .icon {
   width: 2rem;
   height: 2rem;
@@ -267,7 +278,7 @@ a {
 }
 
 .btn--accent:hover {
-  background: #ec3000;
+  background: #d82d02;
 }
 
 .btn--outline {
@@ -294,6 +305,10 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+  }
+
+  .btn--bold{
+    font-size:2rem;
   }
 }
 
