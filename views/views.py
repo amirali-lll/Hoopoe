@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from Services.models import Service
 
 def index(request):
      template = loader.get_template('index.html')
@@ -32,3 +33,12 @@ def HoopTest(request):
 
 def HoopEye(request):
      return render(request,'HoopEye.html',{})
+
+
+
+def Test(request):
+     services = Service.objects.all()
+     context = {
+          'services' : services,
+     }
+     return render(request,'test.html',context)

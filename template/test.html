@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  test
+{% endblock %}
+{% block content %}
+  {% for service in services %}
+    <h1>{{ service.name }}</h1>
+
+  {% endfor %}
+{% endblock %}
