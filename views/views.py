@@ -5,7 +5,11 @@ from Services.models import Service
 
 def index(request):
      template = loader.get_template('index.html')
-     context = {}
+     services = Service.objects.all()
+     
+     context = {
+          'services':services
+     }
      return HttpResponse(template.render(context, request))
 
 def products(request):

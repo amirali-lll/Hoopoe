@@ -41,7 +41,31 @@
     <p>برخی از محصولات و سرویس های ما در یک نگاه</p>
   </header>
   <div class="grid grid--1x4 grid--1x2">
+    {% for service in services %}
     <div class="plan">
+      <div class="card card--secondary">
+        <header class="card__header">
+          <h3 class="plan__name">{{service.name}}</h3>
+
+          <span class="plan__description">{{service.feature_summery_title}}</span>
+        </header>
+        <div class="card__body">
+          <ul class="list list--tick">
+            <li class="list__item">{{service.feature_summery1}}</li>
+            
+            <li class="list__item">{{service.feature_summery2}}</li>
+            
+            <li class="list__item">{{service.feature_summery3}}</li>
+            
+            <li class="list__item">{{service.feature_summery4}}</li>
+            
+          </ul>
+          <a href="/services/{{service.id}}" class="btn btn--outline btn--block">اطلاعات بیشتر</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <!-- <div class="plan">
       <div class="card card--secondary">
         <header class="card__header">
           <h3 class="plan__name">SIEM</h3>
@@ -111,7 +135,7 @@
           <a href="/products/HoopTest" class="btn btn--outline btn--block">اطلاعات بیشتر</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- contact us -->
