@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path ,include
+from .views import dynamic_lookup
 
 urlpatterns = [
+    path('<int:id>/',dynamic_lookup,name= 'service'),
     path('admin/', admin.site.urls),
-    path('services/', include('Services.urls')),
+    
     path('', include('views.urls')),
     # path('products/', include('views.urls')),
     # path('contact/', include('views.urls'))

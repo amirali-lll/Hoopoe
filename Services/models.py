@@ -21,3 +21,5 @@ class Service(models.Model):
     feature3_description = models.TextField(blank=True)
     feature3_image = models.ImageField(blank=True)
 
+    def get_absolute_url(self):
+        return f"/services/{self.id}"
