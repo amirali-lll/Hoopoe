@@ -43,10 +43,13 @@
       <p href="/products/">محصولات</p>
       <div class="sub-nav-content">
         <ul class="list">
-          <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
+          {% for s in services %}
+                    <li class="nav__item"><a href={{s.get_absolute_url}}>{{s.name}}</a></li>
+          {% endfor %}
+          <!-- <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
           <li class="nav__item"><a href="/products/SIEM">SIEM</a></li>
           <li class="nav__item"><a href="/products/HoopTest">HoopTest</a></li>
-          <li class="nav__item"><a href="/products/HoopEye">HoopEye</a></li>
+          <li class="nav__item"><a href="/products/HoopEye">HoopEye</a></li> -->
         </ul>
       </div>
     </li>
