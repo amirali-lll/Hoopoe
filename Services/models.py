@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Service(models.Model):
     name = models.CharField(max_length=30)
-
+    feature_summery_title = models.CharField(max_length=300,blank=True)
     feature_summery1 = models.CharField(max_length=300,blank=True)
     feature_summery2 = models.CharField(max_length=300,blank=True)
     feature_summery3 = models.CharField(max_length=300,blank=True)
