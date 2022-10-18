@@ -19,9 +19,4 @@ from .views import dynamic_lookup
 
 urlpatterns = [
     path('<int:id>/',dynamic_lookup,name= 'service'),
-    path('admin/', admin.site.urls),
-    
-    path('', include('views.urls')),
-    # path('products/', include('views.urls')),
-    # path('contact/', include('views.urls'))
 ]
