@@ -1,8 +1,54 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %}
-  {{service.name}}
-{% endblock %}
-{% block content %}
-  content
+{% extends 'base.html' %} {% load static %} {% block title %} {{service.name}}
+{% endblock %} {% block content %}
+<section class="block block--dark block--light-dark">
+  <div class="container">
+    <header class="block__header">
+      {% if service.main_titel %}
+      <h2>{{ service.main_titel }}</h2>
+      {% endif %}
+      {% if service.main_description %}
+      <p>{{ service.main_description }}</p>
+      {% endif %}
+    </header>
+    <article class="grid grid--1x2 feature">
+      {% if service.feature1_title and service.feature1_description %}
+      <div class="feature__content">
+        <h3 class="feature__heading">{{ service.feature1_title }}</h3>
+        <p>
+          {{ service.feature1_description }}
+        </p>
+      </div>
+      {% endif %}
+      {% if service.feature1_image %}
+      <img class="feature__image" src="{{service.feature1_image.url}}" alt="" />
+      {% endif %}
+    </article>
+    <article class="grid grid--1x2 feature">
+      {% if service.feature2_title and service.feature2_description %}
+      <div class="feature__content">
+        <h3 class="feature__heading">{{ service.feature2_title }}</h3>
+        <p>
+          {{ service.feature2_description }}
+        </p>
+      </div>
+      {% endif %}
+      {% if service.feature2_image %}
+      <img class="feature__image" src="{{service.feature2_image.url}}" alt="" />
+      {% endif %}
+    </article>
+    <article class="grid grid--1x2 feature">
+      {% if service.feature3_title and service.feature3_description %}
+      <div class="feature__content">
+        <h3 class="feature__heading">{{ service.feature3_title }}</h3>
+        <p>
+          {{ service.feature3_description }}
+        </p>
+      </div>
+      {% endif %}
+      {% if service.feature3_image %}
+      <img class="feature__image" src="{{service.feature3_image.url}}" alt="" />
+      {% endif %}
+    </article>
+  </div>
+</section>
 {% endblock %}

@@ -9,6 +9,11 @@ class Service(models.Model):
     feature_summery3 = models.CharField(max_length=300,blank=True)
     feature_summery4 = models.CharField(max_length=300,blank=True)
 
+    main_titel = models.CharField(max_length=300,blank=True)
+    main_description = models.TextField(blank=True)
+    
+
+
     feature1_title = models.CharField(max_length=30,blank=True)
     feature1_description = models.TextField(blank=True)
     feature1_image = models.ImageField(blank=True)
