@@ -1118,3 +1118,31 @@ a {
 .block--contact .hero__content{
   text-align: center;
 }
+
+/* Image */
+
+.image__container{
+  background-color: #111;
+  border-radius: 3rem;
+  margin: 2rem;
+  margin-top: 5rem;
+  text-align: right;
+}
+
+/* Contact Us Item */
+
+
+.item_container{
+  border-radius: 3rem;
+  background-color: #111;
+  margin: 2rem;
+  padding: 2rem;
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+}
+
+#WhatsApp{
+  background-color: rgb(37,211,102);
+  color: #fff;
+}

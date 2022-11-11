@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../views/static/views/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="block block--dark hero block--contact">
+        <div class="container grid grid--1x2">
+
+            <div class="image__container">
+                <picture>
+                    <img class="hero__image" src="../views/static/views/images/main-logo.svg" alt="" />
+                </picture>
+            </div>
+            <header class="block__header hero__content">
+                <h2 class="">ارتباط با هدهد</h2>
+                <p class="hero__tagline">راه های ارتباطی ما با شما</p>
+                <div class="item_container">
+                    <span class="item item_tag">تلفن</span>
+                    <span class="item item_id"> 021-12345678</span>
+                </div>
+                <div id="WhatsApp" class="item_container">
+                    <span class="item item_tag">WhatsApp</span>
+                    <span class="item item_id">+98-9123456789</span>
+                </div>
+                <div class="item_container">
+                    <span class="item item_tag">instagram</span>
+                    <span class="item item_id">coming soon</span>
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <section class="block block--gray" data-aos="zoom-in">
+        <header class="block__header">
+            <h2>همکاری های هدهد</h2>
+            <p>برخی از شرکت‌ها یا ارگان‌هایی که با هدهد کار کرده‌اند</p>
+        </header>
+        <div class="container container--company">
+            <div class="company">
+                <div class="company__icon-container">
+                    <img src="{% static 'views/images/Hoopo-companies-logo/VezaratEghtesad.png' %}" alt=""
+                        class="company__icon" />
+                </div>
+                <p class="company__name">وزارت اقتصاد</p>
+            </div>
+            <div class="company">
+                <div class="company__icon-container">
+                    <img src="{% static 'views/images/Hoopo-companies-logo/Preaident.svg' %}" alt=""
+                        class="company__icon" />
+                </div>
+                <p class="company__name">نهاد ریاست جمهوری</p>
+            </div>
+            <div class="company">
+                <div class="company__icon-container">
+                    <img src="{% static 'views/images/Hoopo-companies-logo/TehranUniversity.png' %}" alt=""
+                        class="company__icon" />
+                </div>
+                <p class="company__name">دانشگاه تهران</p>
+            </div>
+            <div class="company">
+                <div class="company__icon-container">
+                    <img src="{% static 'views/images/Hoopo-companies-logo/Parliament.svg' %}" alt=""
+                        class="company__icon" />
+                </div>
+                <p class="company__name">مجلس شورای اسلامی</p>
+            </div>
+        </div>
+    </section>
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>Starting at $9 per month</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+                exercitationem?
+            </p>
+        </header>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="Enter domain name here..." />
+            <button class="btn btn--accent">
+                <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                </svg>Search
+            </button>
+        </div>
+        <ul class="list block-domain__prices">
+            <li><span class="badge badge--secondary">.com $9</span></li>
+            <li>.sg $10</li>
+            <li>.space $11</li>
+            <li>.info $14</li>
+            <li>.net $10</li>
+            <li>.xyz $10</li>
+        </ul>
+    </section>
+    <section class="block container block-plans">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <span class="plan__description">East start on the cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Sotrage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--primary badge--small">10% OFF</span>
+                        <span class="plan__description">East start on the cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Sotrage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <span class="plan__description">East start on the cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Sotrage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
