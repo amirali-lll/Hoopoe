@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 class Service(models.Model):
     name = models.CharField(max_length=30,primary_key=True)
-    main_titel = models.CharField(max_length=300,blank=True)
-    main_description = models.TextField(blank=True)
+    title = models.CharField(max_length=300,blank=True)
+    description = models.TextField(blank=True)
     # features | FK
     # overviews | FK
     def get_absolute_url(self):
