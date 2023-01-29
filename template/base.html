@@ -43,8 +43,8 @@
       <p href="/products/">محصولات</p>
       <div class="sub-nav-content">
         <ul class="list">
-          {% for s in services %}
-                    <li class="nav__item"><a href={{s.get_absolute_url}}>{{s.name}}</a></li>
+          {% for service in services %}
+                    <li class="nav__item"><a href={{service.get_absolute_url}}>{{service.name}}</a></li>
           {% endfor %}
           <!-- <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
           <li class="nav__item"><a href="/products/SIEM">SIEM</a></li>

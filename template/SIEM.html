@@ -1,21 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}
-  HOOPO-SIEM
+  {{service.name}}1234
 {% endblock %}
 {% block content %}
   {% load static %}
 <section class="block block--light-dark block--dark">
   <div class="container">
     <header class="block__header">
-      <h2>SIEM</h2>
+      <h2>{{service.title}}</h2>
       <p>
-        please compelete this section.
+        {{service.description}}
       </p>
     </header>
+    {% for feature in service.features %}
+    {{feature.title}}
+    {% endfor %}
     <article class="grid grid--1x2 feature">
       <div class="feature__content">
-        <h3 class="feature__heading">Super Easy to Use</h3>
+        <h3 class="feature__heading"></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati
           vel ad unde est illo at. Labore excepturi officia dolores!
@@ -34,7 +37,7 @@
         <img class="feature__image" src="{% static 'views/images/Hoopo-featurs/photo-1.jpg' %}" alt="" />
       </picture>
     </article>
-    <article class="grid grid--1x2 feature">
+    <!-- <article class="grid grid--1x2 feature">
       <div class="feature__content">
         <h3 class="feature__heading">Simply Fast Websites</h3>
         <p>
@@ -96,7 +99,7 @@
         />
         <img class="feature__image" src="{% static 'views/images/Hoopo-featurs/photo-4.png' %}" alt="" />
       </picture>
-    </article>
+    </article> -->
   </div>
 </section>
 {% endblock %}
