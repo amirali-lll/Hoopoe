@@ -1134,7 +1134,7 @@ a {
 
 .item_container{
   border-radius: 3rem;
-  background-color: #111;
+  background-color: rgb(16, 16, 16);
   margin: 2rem;
   padding: 2rem;
   direction: rtl;
@@ -1143,6 +1143,7 @@ a {
 }
 
 #WhatsApp{
-  background-color: rgb(37,211,102);
+  /* background-color: rgb(95,252,123); */
+  background-color: #25d366;
   color: #fff;
 }
