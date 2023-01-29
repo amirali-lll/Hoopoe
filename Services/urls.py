@@ -18,5 +18,5 @@ from django.urls import path ,include
 from .views import dynamic_lookup
 # app_name = "Services"
 urlpatterns = [
-    path('<int:id>',dynamic_lookup,name= 'service'),
+    path('<str:pk>',dynamic_lookup,name='service'),
 ]
