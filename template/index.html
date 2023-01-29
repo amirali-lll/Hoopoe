@@ -47,17 +47,20 @@
         <header class="card__header">
           <h3 class="plan__name">{{service.name}}</h3>
 
-          <span class="plan__description">{{service.feature_summery_title}}</span>
+          <span class="plan__description">{{service.overview_title}}</span>
         </header>
         <div class="card__body">
           <ul class="list list--tick">
-            <li class="list__item">{{service.feature_summery1}}</li>
-            
+            {% for overview  in service.overviews.all %}
+            <li class="list__item">{{overview.text}}</li>
+            {% endfor %}
+            <!--             
             <li class="list__item">{{service.feature_summery2}}</li>
             
             <li class="list__item">{{service.feature_summery3}}</li>
             
-            <li class="list__item">{{service.feature_summery4}}</li>
+            <li class="list__item">{{service.feature_summery4}}</li> 
+            -->
             
           </ul>
           <a href={{service.get_absolute_url}} class="btn btn--outline btn--block">اطلاعات بیشتر</a>

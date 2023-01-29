@@ -43,8 +43,8 @@
       <p href="/products/">محصولات</p>
       <div class="sub-nav-content">
         <ul class="list">
-          {% for service in services %}
-                    <li class="nav__item"><a href={{service.get_absolute_url}}>{{service.name}}</a></li>
+          {% for my_service in services %}
+                    <li class="nav__item"><a href={{my_service.get_absolute_url}}>{{my_service.name}}</a></li>
           {% endfor %}
           <!-- <li class="nav__item"><a href="/products/Hoopin">Hoopin</a></li>
           <li class="nav__item"><a href="/products/SIEM">SIEM</a></li>
@@ -85,10 +85,13 @@
         </div>
         <div class="collapsible__content">
           <ul class="list">
-            <li><a href="/products/SIEM">SIEM</a></li>
+            {% for my_service in services %}
+            <li><a href="{{my_service.get_absolute_url}}">{{my_service.name}}</a></li>
+            {% endfor  %}
+            <!-- <li><a href="/products/SIEM">SIEM</a></li>
             <li><a href="/products/Hoopin">Hoopin</a></li>
             <li><a href="/products/HoopTest">Hoopo Test</a></li>
-            <li><a href="/products/HoopEye">Hoopo Eye</a></li>
+            <li><a href="/products/HoopEye">Hoopo Eye</a></li> -->
           </ul>
         </div>
       </section>
