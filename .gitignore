@@ -3,6 +3,7 @@
 ### specific to this project ###
 playground.html
 
+static/
 
 ### Django ###
 *.log
