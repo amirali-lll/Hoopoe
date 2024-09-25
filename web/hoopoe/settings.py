@@ -18,9 +18,10 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS=[
+    'https://*.devestouri.ir',
+    'http://*.devestouri.ir',
     'https://*.fiust.ir',
-    'https://*.nabaat.shop',
-    'https://*.nabaat-shop.ir'
+    'http://*.fiust.ir',
 ]
 
 
