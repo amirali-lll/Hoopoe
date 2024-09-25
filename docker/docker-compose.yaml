@@ -1,0 +1,43 @@
+version: '3.9'
+services:
+  backend:
+    build: 
+      context: ../web
+      dockerfile: Dockerfile
+    command: ./django-entrypoint.sh
+    ports:
+      - 8011:8000
+    environment:
+      - DEBUG=0
+
+
+    restart: always
+    volumes:
+      - ../web:/app
+      - /var/www/hoopoe:/var/www/hoopoe
+    depends_on:
+      - db
+
+  db:
+      image: postgres:16
+
+      env_file:
+        - postgres/.env
+
+
+      restart: always
+
+      volumes:
+        - postgres_data:/var/lib/postgresql/data/
+        - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+      ports:
+        - "5432:5432"
+
+
+
+
+
+volumes:
+  postgres_data:
+  pg_data: 
