@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'views.apps.ViewsConfig',
+    # 'views.apps.ViewsConfig',
     'debug_toolbar',
     'Services',
     'views',
